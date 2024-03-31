@@ -1,0 +1,15 @@
+.stepTitle {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    b {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1c2437;
+    }
+    span {
+        font-size: 32px;
+        color: #b2becc;
+        font-weight: 500;
+    }
+}

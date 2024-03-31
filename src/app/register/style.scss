@@ -1,0 +1,25 @@
+.registerPage {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.aside {
+    width: 540px;
+    min-height: 100vh;
+    position: relative;
+    padding: 45px 20px;
+    background-image: url('/img/register-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+.content {
+    padding: 45px 20px;
+    width: calc(100% - 540px);
+    display: inline-flex;
+}

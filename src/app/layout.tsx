@@ -1,10 +1,17 @@
 import StoreProvider from "./StoreProvider";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Roboto } from "next/font/google";
+import "react-tooltip/dist/react-tooltip.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "/public/css/style.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
